@@ -1,0 +1,45 @@
+# helpful git commands
+
+ #creating local repo
+mkdir <folder_name> (create a directory)
+cd <folder_name> (go to directory)
+git init (initialize git)
+touch readme.md (create readme.me)
+vim readme.md (edit readme.md)
+git add * (stage changes)
+git status (check which files are staged, unstaged and untracked)
+git diff (show unstaged changed between your index and the wd)
+git commit -m "create readme" (commit changes)
+
+ #working with branches and reverting changes
+git branch (check all local branches)
+git branch -m main (if your branch is named "main," do this)
+git log --oneline --all (see commit history in compact form)
+git checkout <commit hash> (go to some commit)
+git checkout -b <branch_name> OR git switch -c <branch name> (create then go to new branch)
+git checkout -b <branch_name> <commit hash> (go to specific commit and make branch in one step)
+git checkout main OR git switch main (go back to main branch)
+git merge <branch_name> (merge changes from named commits with current branch)
+git revert <commit> (new commit to revert changes made and apply to new branch)
+git reset <file> (remove from staging area but leave wd unchanged)
+
+ #connecting local to remote
+git remote add https:://github.com/<your_username>/<your_repo_name>.git (add origin)
+git push -u origin main (push changes)
+
+ #working with branches on github
+git fetch remote (fetch repo-butdoesn't change branch)
+git status (check the status)
+git pull (pull the repo, or merge)
+git branch -a (see both remote and local branches)
+git checkout <branch_name> (create and go to new branch)
+git push --set-upstream origin <branch_name> (push and create new remote branch)
+
+ #forking, branching and pull requests
+git clone <URL> (clone a repo)
+git checkout -b <branch_name> OR git switch -c <branch_name> (create new branch)
+git add * (stage change)
+git commit -m "<insert descriptive message>" (create commit)
+git push --set-upstream origin <branch_name> (push commit)
+
+
