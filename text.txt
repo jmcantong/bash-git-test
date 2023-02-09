@@ -43,3 +43,7 @@ git commit -m "<insert descriptive message>" (create commit)
 git push --set-upstream origin <branch_name> (push commit)
 
 
+###note###
+for the original git cheatsheet made by Tom van Neunen, see: https://github.com/dlab-berkeley/Bash-Git/blob/main/git_cheatsheet.md - this copy was made for my understanding. 
+
+
